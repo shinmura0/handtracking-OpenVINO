@@ -1,5 +1,29 @@
-OpenVINOへの変換が成功しました。
-15FPSくらい出ています。近日中にアップする予定です。
+# [Original](https://github.com/victordibia/handtracking)(Raspberry Pi 3)  
+![gif1](https://github.com/shinmura0/handtracking-OpenVINO/blob/master/images/gif1.gif "gif1")  
+**1FPS**  
 
-なお、現在アップしているMobileNetV1のモデルは学習途中のものですので、
-認識精度は著しく悪いです。(4/16現在)
+# handtracing-OpenVINO(Raspberry Pi 3 with NCS2)
+
+![gif2](https://github.com/shinmura0/handtracking-OpenVINO/blob/master/images/gif2.gif "gif2")  
+**10~15FPS**  
+![gif3](https://github.com/shinmura0/handtracking-OpenVINO/blob/master/images/gif3.gif "gif3")  
+  
+
+# Environment
++ Raspberry Pi 3(or PC)
++ USB camera
++ [NCS2](https://software.intel.com/en-us/neural-compute-stick) or Movidius
+
+# How to use
++ Install OpenVINO
++ Download this repository
++ Command as follows
+
+```
+python3 main.py -wd 640 -ht 480
+```
+
+# Acknowledgment
+Thank you very much for the following link.
++ https://github.com/PINTO0309/MobileNet-SSD-RealSense
++ https://github.com/victordibia/handtracking
